@@ -1,8 +1,9 @@
 # Principal Curves Demo
 
-This repository contains a small educational implementation of a **simple principal-curve approximation** and several synthetic examples in 2D and 3D.
+This repository contains a small implementation of a **simple principal-curve approximation** and several examples in 2D and 3D.
 
-The goal is to visualize the idea that a principal curve can act as a **high-density skeleton** of a point cloud. The implementation is intentionally simple and is meant for experimentation, visualization, and discussion.
+The goal is to visualize the idea that a principal curve can act as a **high-density skeleton** of a point cloud. 
+The implementation is intentionally simple and is meant for experimentation, visualization, and discussion.
 
 ## What the algorithm does
 
@@ -143,5 +144,3 @@ For clustering, one can combine principal curves with density-based criteria, lo
 ## Scientific context
 
 Principal curves are related to the idea of representing data by a smooth central skeleton. Density-ridge methods provide a more rigorous differential framework: a density ridge is defined using the density, its gradient, and its Hessian, and can represent curves or higher-dimensional principal manifolds.
-
-This repository is a lightweight starting point for experiments around principal curves, density skeletons, and geometric data analysis.
