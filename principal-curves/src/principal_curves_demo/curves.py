@@ -1,9 +1,4 @@
 """A simple iterative approximation of principal curves.
-
-This implementation is deliberately lightweight and educational. It is not the
-full density-ridge method of Ozertem/Erdogmus or the manifold traversal method
-based on geodesics. It approximates a single global central curve using local
-averaging and smoothing.
 """
 
 from __future__ import annotations
@@ -118,9 +113,7 @@ def principal_curve(
     Notes
     -----
     This method learns a single global curve. On separated clusters, it may
-    connect components artificially. This behavior is useful pedagogically for
-    contrasting simple principal curves with density-ridge and clustering
-    methods.
+    connect components artificially. 
     """
 
     if n_iter < 0:
