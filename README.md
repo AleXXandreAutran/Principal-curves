@@ -23,7 +23,6 @@ This gives a simple approximation of a principal curve.
 principal-curves-demo/
 ├── README.md
 ├── requirements.txt
-├── LICENSE
 ├── src/
 │   └── principal_curves_demo/
 │       ├── __init__.py
