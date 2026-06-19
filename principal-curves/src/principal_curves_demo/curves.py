@@ -23,14 +23,12 @@ def initialize_curve_pca(X: np.ndarray, n_nodes: int = 40) -> np.ndarray:
     """Initialize curve nodes along the first principal component.
 
     Parameters
-    ----------
     X:
         Data matrix with shape ``(n_samples, n_features)``.
     n_nodes:
         Number of nodes used to discretize the curve.
 
     Returns
-    -------
     np.ndarray
         Initial curve with shape ``(n_nodes, n_features)``.
     """
@@ -103,17 +101,11 @@ def principal_curve(
     """Approximate one global principal curve.
 
     Algorithm
-    ---------
     1. Initialize nodes with PCA.
     2. Assign every data point to its closest node.
     3. Move each node to a local weighted average of the data.
     4. Smooth the curve.
     5. Repeat steps 2--4.
-
-    Notes
-    -----
-    This method learns a single global curve. On separated clusters, it may
-    connect components artificially. 
     """
 
     if n_iter < 0:
