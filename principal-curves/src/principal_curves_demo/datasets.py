@@ -20,14 +20,12 @@ def generate_datasets_2d(n_samples: int = 1000, random_state: int = 0) -> Dict[s
     """Generate several two-dimensional synthetic datasets.
 
     Parameters
-    ----------
     n_samples:
         Number of points per dataset.
     random_state:
         Seed for reproducible data generation.
 
     Returns
-    -------
     dict
         Ordered mapping ``name -> (X, y)`` where ``X`` has shape
         ``(n_samples, 2)`` and ``y`` is a synthetic label vector used only for
