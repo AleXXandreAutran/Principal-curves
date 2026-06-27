@@ -3,7 +3,7 @@
 This repository contains a small implementation of a **simple principal-curve approximation** and several examples in 2D and 3D.
 
 The goal is to visualize the idea that a principal curve can act as a **high-density skeleton** of a point cloud. 
-The implementation is intentionally simple and is meant for experimentation, visualization, and discussion.
+The implementation is simple for experimentation, visualization, and discussion.
 
 ## What the algorithm does
 
@@ -136,9 +136,7 @@ history = result.history
 
 ## Limitations
 
-This implementation learns **one global curve**. On data made of separated clusters, the curve may connect clusters artificially. This is expected: the method is designed to summarize a global geometry, not to perform clustering directly.
-
-For clustering, one can combine principal curves with density-based criteria, local unimodality tests, or density-valley separators.
+This implementation learns **one global curve**. On data made of separated clusters, the curve may connect clusters artificially. For clustering, one can combine principal curves with density-based criteria, local unimodality tests, or density-valley separators.
 
 ## Scientific context
 
